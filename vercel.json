@@ -1,8 +1,11 @@
 {
-  "routes": [
+  "redirects": [
+    {       "source": "/about",       "destination": "/contact",       "permanent": true     }
+  ],
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "https://appsumo.dorik.io/$1"
+      "source": "(/.*)",
+      "destination": "https://appsumo.dorik.io/$1"
     }
   ]
 }
